@@ -5,9 +5,14 @@ import (
 )
 
 type ObjectRepo struct {
+	MacroTestName string `json:"macrotestname"`
+	MicroTest     []MicroTest
+	CreatedBy     string `json:"createdby"`
+}
+
+type MicroTest struct {
 	MicroTestName string `json:"microtestname"`
 	Steps         []Steps
-	CreatedBy     string `json:"createdby"`
 }
 
 type Steps struct {
@@ -20,7 +25,7 @@ func EnsureIndex(dbname string, collectioname string, s *mgo.Session) *mgo.Sessi
 	session := s.Copy()
 	c := session.DB(dbname).C(collectioname)
 	index := mgo.Index{
-		Key:      []string{"microtestname"},
+		Key:      []string{"macrotestname"},
 		Unique:   true,
 		DropDups: true,
 	}

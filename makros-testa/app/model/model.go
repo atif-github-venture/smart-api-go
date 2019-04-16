@@ -5,10 +5,11 @@ import (
 )
 
 type ObjectRepo struct {
-	MacroTestName string    `json:"macrotestname"`
-	MicroTests   [] string `json:"microtests"`
-	CreatedBy    string    `json:"createdby"`
-	Status       bool
+	MacroTestName string   `json:"macrotestname"`
+	MicroTests    []string `json:"microtests"`
+	Tags          []string `json:"tags"`
+	CreatedBy     string   `json:"createdby"`
+	Status        bool
 }
 
 func EnsureIndex(dbname string, collectioname string, s *mgo.Session) *mgo.Session {

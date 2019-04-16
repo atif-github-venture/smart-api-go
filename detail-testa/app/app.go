@@ -5,9 +5,9 @@ import (
 	"gopkg.in/mgo.v2"
 	"log"
 	"net/http"
-	"smartapigo/identifier-reponere/app/handler"
-	"smartapigo/identifier-reponere/app/model"
-	"smartapigo/identifier-reponere/config"
+	"smartapigo/detail-testa/app/handler"
+	"smartapigo/detail-testa/app/model"
+	"smartapigo/detail-testa/config"
 )
 
 type App struct {
@@ -29,15 +29,15 @@ func (a *App) Initialize(config *config.Config) {
 	a.MongoDB = session
 	a.MongoDB.SetMode(mgo.Monotonic, true)
 	a.MongoDB = model.EnsureIndex(dbName, collName, a.MongoDB)
-	a.Router = mux.NewRouter().StrictSlash(true)
+	a.Router = mux.NewRouter()
 	a.setRouters()
 }
 
 func (a *App) setRouters() {
-	a.Get("/identifier-reponere", a.GetObjectRepos)
-	a.Post("/identifier-reponere", a.AddObject)
-	a.Put("/identifier-reponere", a.UpdateObject)
-	a.Delete("/identifier-reponere", a.DeleteObject)
+	a.Get("/detail-testa", a.GetObject)
+	a.Post("/detail-testa", a.AddObject)
+	a.Put("/detail-testa", a.UpdateObject)
+	a.Delete("/detail-testa", a.DeleteObject)
 }
 
 func (a *App) Get(path string, f func(w http.ResponseWriter, r *http.Request)) {
@@ -54,7 +54,7 @@ func (a *App) Delete(path string, f func(w http.ResponseWriter, r *http.Request)
 	a.Router.HandleFunc(path, f).Methods("DELETE")
 }
 
-func (a *App) GetObjectRepos(w http.ResponseWriter, r *http.Request) {
+func (a *App) GetObject(w http.ResponseWriter, r *http.Request) {
 	handler.GetObjects(a.conf, a.MongoDB, w, r)
 }
 

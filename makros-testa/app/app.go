@@ -34,7 +34,7 @@ func (a *App) Initialize(config *config.Config) {
 }
 
 func (a *App) setRouters() {
-	a.Get("/makros-testa", a.GetObjectRepos)
+	a.Get("/makros-testa", a.GetObject)
 	a.Post("/makros-testa", a.AddObject)
 	a.Put("/makros-testa", a.UpdateObject)
 	a.Delete("/makros-testa", a.DeleteObject)
@@ -54,7 +54,7 @@ func (a *App) Delete(path string, f func(w http.ResponseWriter, r *http.Request)
 	a.Router.HandleFunc(path, f).Methods("DELETE")
 }
 
-func (a *App) GetObjectRepos(w http.ResponseWriter, r *http.Request) {
+func (a *App) GetObject(w http.ResponseWriter, r *http.Request) {
 	handler.GetObjects(a.conf, a.MongoDB, w, r)
 }
 

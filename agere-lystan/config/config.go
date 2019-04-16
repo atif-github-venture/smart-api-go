@@ -15,11 +15,11 @@ type DBConfig struct {
 func GetConfig() *Config {
 	return &Config{
 		DB: &DBConfig{
-			MongoUrl:   "mongodb:27017",
+			MongoUrl:   "localhost",
 			Username:   "admin",
 			Password:   "admin",
 			Name:       "smart-mongo",
-			Collection: "object-repository",
+			Collection: "action-list",
 		},
 	}
 }
