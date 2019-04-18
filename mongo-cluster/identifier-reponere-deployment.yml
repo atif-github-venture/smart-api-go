@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: identifier-reponere
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: identifier-reponere
+  type: LoadBalancer
+  externalIPs:
+    - 192.168.99.103
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: identifier-reponere
+  labels:
+    app: identifier-reponere
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: identifier-reponere
+  template:
+    metadata:
+      labels:
+        app: identifier-reponere
+    spec:
+      containers:
+      - name: identifier-reponere
+        image: atifdockerventure/identifier-reponere:latest
+        ports:
+        - containerPort: 8080

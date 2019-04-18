@@ -5,17 +5,5 @@ services:
     container_name: identifier-reponere
     build: ./identifier-reponere
     image: smartapigo/identifier-reponere
-    links:
-      - mongodb
-    depends_on:
-      - mongodb
     ports:
       - "8080:8080"
-
-  mongodb:
-    container_name: mongodb
-    image: mongo
-    ports:
-    - "27017:27017"
-    volumes:
-    - ./data:/data/db

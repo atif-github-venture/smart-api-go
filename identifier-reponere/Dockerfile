@@ -15,7 +15,7 @@ RUN apk --no-cache add curl
 EXPOSE 8080
 #COPY --from=builder ${SOURCE_LOCATION} .
 ENTRYPOINT ["./identifier-reponere"]
-#
+
 
 
 # cd to this directory and then
@@ -25,3 +25,4 @@ ENTRYPOINT ["./identifier-reponere"]
 # To check the container id
     # docker ps -> this will give list of containers running (get container id)
     #docker logs -f c78e59810694
+#**** but mongo db should be up and you need to change the mongo db config on each service to point to your local and not the container
