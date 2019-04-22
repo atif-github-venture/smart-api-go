@@ -3,25 +3,25 @@ RUN apk add git
 RUN go get github.com/gorilla/mux
 RUN go get gopkg.in/mgo.v2
 RUN go get gopkg.in/mgo.v2/bson
-ADD . /go/src/smartapigo/identifier-reponere
-WORKDIR /go/src/smartapigo/identifier-reponere
-RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o identifier-reponere .
+ADD . /go/src/smartapigo/creare-project
+WORKDIR /go/src/smartapigo/creare-project
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o creare-project .
 #RUN go build main.go
-#COPY . /go/src/smartapigo/identifier-reponere
+#COPY . /go/src/smartapigo/creare-project
 
-#CMD ["go", "run", "./identifier-reponere/main.go"]
+#CMD ["go", "run", "./creare-project/main.go"]
 #EXPOSE 8080
 RUN apk --no-cache add curl
 EXPOSE 8080
 #COPY --from=builder ${SOURCE_LOCATION} .
-ENTRYPOINT ["./identifier-reponere"]
+ENTRYPOINT ["./creare-project"]
 
 
 
 # cd to this directory and then
-    # docker build -t identifier-reponere .
+    # docker build -t creare-project .
 # Run the image
-    # docker run -p 8080:8080 -it identifier-reponere
+    # docker run -p 8080:8080 -it creare-project
 # To check the container id
     # docker ps -> this will give list of containers running (get container id)
     #docker logs -f c78e59810694
@@ -29,5 +29,5 @@ ENTRYPOINT ["./identifier-reponere"]
 
 
 #  docker login
-#  docker tag identifier-reponere atifdockerventure/identifier-reponere
-#  docker push atifdockerventure/identifier-reponere:latest
+#  docker tag creare-project atifdockerventure/creare-project
+#  docker push atifdockerventure/creare-project:latest

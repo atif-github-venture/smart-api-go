@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose_backup.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/identifier-reponere-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/mongo-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume-claim.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/mongo-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mongo-cluster/nginx-kubernetes.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/app/app.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/app/handler/common.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/app/handler/createproject.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/app/model/model.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/config/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creare-project/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/property.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utility/utility.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose_backup.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/identifier-reponere/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/identifier-reponere/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identifier-reponere/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/identifier-reponere/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mongo-cluster/nginx-kubernetes.yml" beforeDir="false" afterPath="$PROJECT_DIR$/mongo-cluster/nginx-pod.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartapigo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/smartapigo.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,18 +39,18 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dockerfile" value="3" />
-          <entry key="Go" value="258" />
+          <entry key="Dockerfile" value="6" />
+          <entry key="Go" value="323" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="YAML" value="23" />
+          <entry key="YAML" value="34" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dockerfile" value="712" />
-          <entry key="Go" value="1198" />
-          <entry key="PLAIN_TEXT" value="37" />
-          <entry key="YAML" value="818" />
+          <entry key="Dockerfile" value="714" />
+          <entry key="Go" value="1848" />
+          <entry key="PLAIN_TEXT" value="96" />
+          <entry key="YAML" value="852" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.kubernetes.usages">
@@ -58,49 +63,55 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+        <entry file="file://$PROJECT_DIR$/creare-project/main_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="e#14#152#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose_backup.yml">
+        <entry file="file://$PROJECT_DIR$/creare-project/config/config.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongo-cluster/identifier-reponere-deployment.yml">
+        <entry file="file://$PROJECT_DIR$/creare-project/app/app.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+            <state relative-caret-position="324">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#13#203#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-deployment.yml">
+        <entry file="file://$PROJECT_DIR$/creare-project/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+            <state relative-caret-position="75">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding>
+                <element signature="e#14#93#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/identifier-reponere/app/app.go">
+        <entry file="file://$PROJECT_DIR$/utility/utility.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
-              <folding>
-                <element signature="e#13#218#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="285">
+              <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -125,6 +136,8 @@
       <find>detailler</find>
       <find>local</find>
       <find>helloworld-v1</find>
+      <find>identifier-reponere</find>
+      <find>detail-testa</find>
     </findStrings>
     <replaceStrings>
       <replace>micro</replace>
@@ -132,6 +145,7 @@
       <replace>detailler-testa</replace>
       <replace>detail</replace>
       <replace>identifier-reponere</replace>
+      <replace>creare-project</replace>
     </replaceStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12/libexec" />
@@ -141,20 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/miniatura-testa/config/config.go" />
-        <option value="$PROJECT_DIR$/miniatura-testa/app/handler/minitest.go" />
-        <option value="$PROJECT_DIR$/miniatura-testa/app/model/model.go" />
-        <option value="$PROJECT_DIR$/mikros-testa/app/handler/microtest.go" />
-        <option value="$PROJECT_DIR$/mikros-testa/main.go" />
-        <option value="$PROJECT_DIR$/mikros-testa/config/config.go" />
-        <option value="$PROJECT_DIR$/makros-testa/main.go" />
-        <option value="$PROJECT_DIR$/makros-testa/config/config.go" />
-        <option value="$PROJECT_DIR$/makros-testa/app/handler/macrotest.go" />
-        <option value="$PROJECT_DIR$/identifier-reponere/main_test.go" />
-        <option value="$PROJECT_DIR$/mikros-testa/main_test.go" />
-        <option value="$PROJECT_DIR$/makros-testa/main_test.go" />
-        <option value="$PROJECT_DIR$/agere/main_test.go" />
-        <option value="$PROJECT_DIR$/agere-lystan/main.go" />
         <option value="$PROJECT_DIR$/agere-lystan/config/config.go" />
         <option value="$PROJECT_DIR$/agere-lystan/app/handler/macrotest.go" />
         <option value="$PROJECT_DIR$/agere-lystan/app/app.go" />
@@ -183,15 +183,29 @@
         <option value="$PROJECT_DIR$/cluster/mongo-persistent-volume-claim.yml" />
         <option value="$PROJECT_DIR$/cluster/mongo-deployment.yml" />
         <option value="$PROJECT_DIR$/cluster/mongo-service.yml" />
-        <option value="$PROJECT_DIR$/identifier-reponere/Dockerfile" />
         <option value="$PROJECT_DIR$/mongo-cluster/building-repo-from-img-service.yml" />
         <option value="$PROJECT_DIR$/mongo-cluster/mongo-service.yml" />
         <option value="$PROJECT_DIR$/mongo-cluster/build-service-layer.yml" />
         <option value="$PROJECT_DIR$/mongo-cluster/identifier-reponere-deployment.yml" />
-        <option value="$PROJECT_DIR$/identifier-reponere/config/config.go" />
-        <option value="$PROJECT_DIR$/docker-compose_backup.yml" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/identifier-reponere/app/app.go" />
+        <option value="$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume.yml" />
+        <option value="$PROJECT_DIR$/docker-compose_backup.yml" />
+        <option value="$PROJECT_DIR$/identifier-reponere/Dockerfile" />
+        <option value="$PROJECT_DIR$/identifier-reponere/config/config.go" />
+        <option value="$PROJECT_DIR$/mongo-cluster/nginx-pod.yml" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/creare-project/Dockerfile" />
+        <option value="$PROJECT_DIR$/creare-project/app/handler/objectrepository.go" />
+        <option value="$PROJECT_DIR$/creare-project/main.go" />
+        <option value="$PROJECT_DIR$/creare-project/main_test.go" />
+        <option value="$PROJECT_DIR$/creare-project/app/app.go" />
+        <option value="$PROJECT_DIR$/creare-project/app/model/model.go" />
+        <option value="$PROJECT_DIR$/creare-project/app/handler/createproject.go" />
+        <option value="$PROJECT_DIR$/mongo.yml" />
+        <option value="$PROJECT_DIR$/property.go" />
+        <option value="$PROJECT_DIR$/property.yml" />
+        <option value="$PROJECT_DIR$/creare-project/config/config.go" />
+        <option value="$PROJECT_DIR$/utility/utility.go" />
       </list>
     </option>
   </component>
@@ -224,18 +238,24 @@
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="identifier-reponere" type="462c0819:PsiDirectoryNode" />
+              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="identifier-reponere" type="462c0819:PsiDirectoryNode" />
+              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo-cluster" type="462c0819:PsiDirectoryNode" />
+              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +268,7 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555621949527" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555968783052" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -257,13 +277,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/creare-project" />
       <recent name="$PROJECT_DIR$/mongo-cluster" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/detailler-testa" />
       <recent name="$PROJECT_DIR$/agere" />
-      <recent name="$PROJECT_DIR$/makros-testa" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utility" />
       <recent name="$PROJECT_DIR$/cluster" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -280,7 +301,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Test.main_test.go (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -293,49 +314,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="smartapigo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/agere-lystan/main.go" />
-      <package value="smartapigo" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="smartapigo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/identifier-reponere/main.go" />
-      <package value="smartapigo" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="smartapigo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/mikros-testa/main.go" />
-      <package value="smartapigo" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go (4)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="smartapigo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/makros-testa/main.go" />
-      <package value="smartapigo" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="smartapigo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/detail-testa/main.go" />
+      <filePath value="$PROJECT_DIR$/creare-project/main.go" />
       <package value="smartapigo" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_test.go (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="smartapigo" />
+      <working_directory value="$PROJECT_DIR$/creare-project" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="smartapigo" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/creare-project/main_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="smartapigo" />
+      <working_directory value="$PROJECT_DIR$/identifier-reponere" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="smartapigo" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/identifier-reponere/main_test.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -363,18 +368,14 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Build.go build main.go (1)" />
-      <item itemvalue="Go Build.go build main.go (2)" />
-      <item itemvalue="Go Build.go build main.go (3)" />
-      <item itemvalue="Go Build.go build main.go (4)" />
+      <item itemvalue="Go Test.main_test.go" />
+      <item itemvalue="Go Test.main_test.go (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build main.go (4)" />
-        <item itemvalue="Go Build.go build main.go (3)" />
-        <item itemvalue="Go Build.go build main.go (2)" />
+        <item itemvalue="Go Test.main_test.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Test.main_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -390,7 +391,7 @@
       <updated>1555010336003</updated>
       <workItem from="1555010337706" duration="39543000" />
       <workItem from="1555428667799" duration="20700000" />
-      <workItem from="1555525672861" duration="20738000" />
+      <workItem from="1555525672861" duration="36832000" />
     </task>
     <task id="LOCAL-00001" summary="added dockerfiles and docker compose">
       <created>1555453631920</created>
@@ -399,49 +400,56 @@
       <option name="project" value="LOCAL" />
       <updated>1555453631920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="experimenting with kubernetes">
+      <created>1555622064673</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555622064673</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="main_test_go_(2) - 2019.04.15 at 13h 15m 31s.xml">
-      <configuration name="main_test.go (2)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go - 2019.04.22 at 17h 22m 49s.xml">
+      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="main_test_go_(3) - 2019.04.15 at 13h 21m 32s.xml">
-      <configuration name="main_test.go (3)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go - 2019.04.22 at 17h 23m 14s.xml">
+      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="main_test_go_(3) - 2019.04.15 at 13h 22m 36s.xml">
-      <configuration name="main_test.go (3)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go - 2019.04.22 at 17h 23m 32s.xml">
+      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="main_test_go_(3) - 2019.04.15 at 13h 23m 31s.xml">
-      <configuration name="main_test.go (3)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go - 2019.04.22 at 17h 24m 04s.xml">
+      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="main_test_go_(3) - 2019.04.15 at 13h 30m 13s.xml">
-      <configuration name="main_test.go (3)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go - 2019.04.22 at 17h 26m 07s.xml">
+      <configuration name="main_test.go" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestAddObjBadRequestJsonBody_in_smartapigo_agere-lystan - 2019.04.15 at 13h 32m 24s.xml">
-      <configuration name="TestAddObjBadRequestJsonBody in smartapigo/agere-lystan" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go_(1) - 2019.04.22 at 17h 26m 24s.xml">
+      <configuration name="main_test.go (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestAddObjBadRequestJsonBody_in_smartapigo_agere-lystan - 2019.04.15 at 13h 32m 35s.xml">
-      <configuration name="TestAddObjBadRequestJsonBody in smartapigo/agere-lystan" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go_(1) - 2019.04.22 at 17h 27m 26s.xml">
+      <configuration name="main_test.go (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestAddObjBadRequestJsonBody_in_smartapigo_agere-lystan - 2019.04.15 at 13h 32m 50s.xml">
-      <configuration name="TestAddObjBadRequestJsonBody in smartapigo/agere-lystan" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go_(1) - 2019.04.22 at 17h 28m 53s.xml">
+      <configuration name="main_test.go (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="TestGetObjNotFound_in_smartapigo_agere-lystan - 2019.04.15 at 13h 32m 58s.xml">
-      <configuration name="TestGetObjNotFound in smartapigo/agere-lystan" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go_(1) - 2019.04.22 at 17h 29m 27s.xml">
+      <configuration name="main_test.go (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
-    <history-entry file="main_test_go_(3) - 2019.04.15 at 13h 33m 10s.xml">
-      <configuration name="main_test.go (3)" configurationId="GoTestRunConfiguration" />
+    <history-entry file="main_test_go_(1) - 2019.04.22 at 17h 30m 23s.xml">
+      <configuration name="main_test.go (1)" configurationId="GoTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80981000" />
+    <option name="totallyTimeSpent" value="97075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="961" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -450,7 +458,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289941" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289941" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289941" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,7 +466,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289941" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" visible="true" weight="0.3514793" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.42130178" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.3289941" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -523,10 +531,63 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added dockerfiles and docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="added dockerfiles and docker compose" />
+    <MESSAGE value="experimenting with kubernetes" />
+    <option name="LAST_COMMIT_MESSAGE" value="experimenting with kubernetes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/creare-project/config/config.go</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>c.MongoUrl</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>c</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>*(*&quot;string&quot;)(824634355200)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>c(MongoUrl)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>data</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ioutil.ReadFile(&quot;/Users/aahmed/go/src/smartapigo/property.yml&quot;)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ioutil.ReadFile(&quot;property.yml&quot;)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ioutil.ReadFile(&quot;smartapigo/property.yml&quot;)</expression-string>
+        <language-id>go</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>basePath+queryUpdate</expression-string>
         <language-id>go</language-id>
@@ -535,49 +596,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ginmicro/users/main.go" />
-    <entry file="file://$PROJECT_DIR$/ginmicro/login/main.go" />
-    <entry file="file://$PROJECT_DIR$/mikros-testa/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mikros-testa/app/handler/microtest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="40" selection-end-line="64" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mikros-testa/app/handler/common.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makros-testa/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makros-testa/app/handler/macrotest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-597">
-          <caret line="61" column="26" lean-forward="true" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makros-testa/app/handler/common.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/agere-lystan/app/handler/common.go">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/mikros-testa/app/app.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -603,6 +621,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#14#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -627,6 +648,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#14#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -634,6 +658,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="13" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,20 +682,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="930">
           <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detail-testa/app/model/model.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detail-testa/main_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="e#17#187#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -711,6 +727,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -718,6 +737,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding>
+            <element signature="e#14#89#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -742,31 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/session.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="242" column="5" selection-start-line="242" selection-start-column="5" selection-end-line="242" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/identifier-reponere/app/model/model.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/identifier-reponere/main_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo-cluster/nginx-kubernetes.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -787,38 +788,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume-claim.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-service.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/identifier-reponere/config/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/identifier-reponere/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -829,34 +802,195 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-service.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="41" lean-forward="true" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose_backup.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="315">
+          <caret line="21" column="17" lean-forward="true" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mongo-cluster/identifier-reponere-deployment.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
+        <state relative-caret-position="510">
           <caret line="34" column="29" lean-forward="true" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identifier-reponere/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo-cluster/mongo-persistent-volume.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo-cluster/nginx-pod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose_backup.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="16" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identifier-reponere/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail-testa/app/model/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/detail-testa/main_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="18" column="17" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/session.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="1266" column="21" selection-start-line="1266" selection-start-column="21" selection-end-line="1266" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/app/handler/createproject.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="8" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#17#191#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/app/handler/common.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#17#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/app/model/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" lean-forward="true" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/property.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/identifier-reponere/app/app.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="375">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="e#13#218#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identifier-reponere/main_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/main_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="e#14#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/go/1.12/libexec/src/runtime/panic.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="689" selection-start-line="689" selection-end-line="689" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/app/app.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#13#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#93#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creare-project/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utility/utility.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
