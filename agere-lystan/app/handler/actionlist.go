@@ -13,10 +13,16 @@ import (
 
 func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
+	model.EnsureIndex(projectName, co.DB.Collection, session)
 	m := make(map[string]string)
 	var objrep []model.ObjectRepo
 	err := errors.New("yoyo")
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 	values := r.URL.Query()
 
 	if len(values) > 0 {
@@ -49,6 +55,11 @@ func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *htt
 
 func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
 	var objrep model.ObjectRepo
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&objrep)
@@ -57,7 +68,7 @@ func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Re
 		return
 	}
 
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 
 	err = c.Insert(objrep)
 	if err != nil {
@@ -76,50 +87,16 @@ func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Re
 
 }
 
-func UpdateObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
-	session := s.Copy()
-	var objrep model.ObjectRepo
-	decoder := json.NewDecoder(r.Body)
-	err := decoder.Decode(&objrep)
-	if err != nil {
-		ErrorWithJSON(w, "Incorrect body", http.StatusBadRequest)
-		return
-	}
-
-	m := make(map[string]string)
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
-	values := r.URL.Query()
-	if len(values) > 0 {
-		for k, v := range values {
-			m[k] = v[0]
-		}
-		err = c.Update(m, &objrep)
-	} else {
-		ErrorWithJSON(w, "Wrong URL query string formation", http.StatusNotFound)
-	}
-
-	if err != nil {
-		switch err {
-		default:
-			ErrorWithJSON(w, "Database error", http.StatusInternalServerError)
-			//log.Println("Failed update object: ", err)
-			return
-		case mgo.ErrNotFound:
-			ErrorWithJSON(w, "Object not found", http.StatusNotFound)
-			return
-		}
-	}
-
-	w.WriteHeader(http.StatusNoContent)
-	ResponseWithJSON(w, []byte(nil), http.StatusNoContent)
-
-}
-
 func DeleteObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
 	m := make(map[string]string)
 	var err error
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 	values := r.URL.Query()
 
 	if len(values) > 0 {

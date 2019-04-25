@@ -13,10 +13,16 @@ import (
 
 func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
+	model.EnsureIndex(projectName, co.DB.Collection, session)
 	m := make(map[string]string)
 	var objrep []model.ObjectRepo
 	err := errors.New("yoyo")
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 	values := r.URL.Query()
 
 	if len(values) > 0 {
@@ -49,6 +55,11 @@ func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *htt
 
 func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
 	var objrep model.ObjectRepo
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&objrep)
@@ -57,7 +68,7 @@ func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Re
 		return
 	}
 
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 
 	err = c.Insert(objrep)
 	if err != nil {
@@ -78,6 +89,11 @@ func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Re
 
 func UpdateObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
 	var objrep model.ObjectRepo
 	decoder := json.NewDecoder(r.Body)
 	err := decoder.Decode(&objrep)
@@ -87,7 +103,7 @@ func UpdateObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http
 	}
 
 	m := make(map[string]string)
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 	values := r.URL.Query()
 	if len(values) > 0 {
 		for k, v := range values {
@@ -117,9 +133,14 @@ func UpdateObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http
 
 func DeleteObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
 	session := s.Copy()
+	projectName := GetProjectName(r)
+	if projectName == "" {
+		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
+		return
+	}
 	m := make(map[string]string)
 	var err error
-	c := session.DB(co.DB.Name).C(co.DB.Collection)
+	c := session.DB(projectName).C(co.DB.Collection)
 	values := r.URL.Query()
 
 	if len(values) > 0 {
@@ -128,7 +149,7 @@ func DeleteObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http
 		}
 		err = c.Remove(m)
 	} else {
-			ErrorWithJSON(w, "Wrong URL query string formation", http.StatusBadRequest)
+		ErrorWithJSON(w, "Wrong URL query string formation", http.StatusBadRequest)
 	}
 
 	if err != nil {

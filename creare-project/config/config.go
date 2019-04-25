@@ -20,7 +20,7 @@ func GetConfig() *Config {
 
 	return &Config{
 		DB: &DBConfig{
-			MongoUrl:   c.MongoDBUrl + ":27017",
+			MongoUrl:   c.MongoDBUrl,
 			Username:   "admin",
 			Password:   "admin",
 			Name:       "smart-mongo-core",

@@ -6,7 +6,6 @@ import (
 	"log"
 	"net/http"
 	"smartapigo/identifier-reponere/app/handler"
-	"smartapigo/identifier-reponere/app/model"
 	"smartapigo/identifier-reponere/config"
 )
 
@@ -18,17 +17,13 @@ type App struct {
 
 func (a *App) Initialize(config *config.Config) {
 	dbURI := config.DB.MongoUrl
-	dbName := config.DB.Name
-	collName := config.DB.Collection
 	a.conf = config
 	session, err := mgo.Dial(dbURI)
 	if err != nil {
 		panic(err)
 	}
-	defer session.Close()
 	a.MongoDB = session
 	a.MongoDB.SetMode(mgo.Monotonic, true)
-	a.MongoDB = model.EnsureIndex(dbName, collName, a.MongoDB)
 	a.Router = mux.NewRouter().StrictSlash(true)
 	a.setRouters()
 }
