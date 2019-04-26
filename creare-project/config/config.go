@@ -1,7 +1,5 @@
 package config
 
-import "smartapigo/utility"
-
 type Config struct {
 	DB *DBConfig
 }
@@ -15,12 +13,9 @@ type DBConfig struct {
 }
 
 func GetConfig() *Config {
-	var c utility.Prop
-	c.ReadProperty()
-
 	return &Config{
 		DB: &DBConfig{
-			MongoUrl:   c.MongoDBUrl,
+			MongoUrl:   "mongo:27017",
 			Username:   "admin",
 			Password:   "admin",
 			Name:       "smart-mongo-core",

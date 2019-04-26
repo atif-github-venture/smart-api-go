@@ -9,8 +9,8 @@ spec:
   selector:
     app: identifier-reponere
   type: LoadBalancer
-  externalIPs:
-    - 192.168.99.103
+#  externalIPs:
+#    - 192.168.99.105
 ---
 apiVersion: apps/v1
 kind: Deployment

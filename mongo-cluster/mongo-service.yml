@@ -11,11 +11,8 @@ spec:
   - port: 27017
     targetPort: 27017
     protocol: TCP
-  # Replace with the IP of your minikube node / master node if you want external access
-  # externalIPs:
-  #   - xxx.zzz.yyy.qqq
   externalIPs:
-    - 192.168.99.103
+    - 192.168.99.105
   selector:
     app: mongo
     role: master

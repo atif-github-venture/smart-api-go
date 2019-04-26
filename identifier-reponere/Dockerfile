@@ -5,7 +5,6 @@ RUN go get gopkg.in/mgo.v2
 RUN go get gopkg.in/mgo.v2/bson
 RUN go get gopkg.in/yaml.v2
 ADD . /go/src/smartapigo/identifier-reponere
-ADD . /go/src/smartapigo/utility
 WORKDIR /go/src/smartapigo/identifier-reponere
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o identifier-reponere .
 RUN apk --no-cache add curl
