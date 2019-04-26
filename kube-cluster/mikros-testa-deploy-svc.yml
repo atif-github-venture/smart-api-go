@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mikros-testa
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: mikros-testa
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mikros-testa
+  labels:
+    app: mikros-testa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mikros-testa
+  template:
+    metadata:
+      labels:
+        app: mikros-testa
+    spec:
+      containers:
+      - name: mikros-testa
+        image: atifdockerventure/mikros-testa:latest
+        ports:
+        - containerPort: 8080

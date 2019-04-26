@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: detail-testa
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+  selector:
+    app: detail-testa
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: detail-testa
+  labels:
+    app: detail-testa
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: detail-testa
+  template:
+    metadata:
+      labels:
+        app: detail-testa
+    spec:
+      containers:
+      - name: detail-testa
+        image: atifdockerventure/detail-testa:latest
+        ports:
+        - containerPort: 8080

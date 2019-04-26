@@ -1,35 +1,33 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: identifier-reponere
+  name: creare-project
 spec:
   ports:
   - port: 8080
     protocol: TCP
   selector:
-    app: identifier-reponere
+    app: creare-project
   type: LoadBalancer
-#  externalIPs:
-#    - 192.168.99.105
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: identifier-reponere
+  name: creare-project
   labels:
-    app: identifier-reponere
+    app: creare-project
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: identifier-reponere
+      app: creare-project
   template:
     metadata:
       labels:
-        app: identifier-reponere
+        app: creare-project
     spec:
       containers:
-      - name: identifier-reponere
-        image: atifdockerventure/identifier-reponere:latest
+      - name: creare-project
+        image: atifdockerventure/creare-project:latest
         ports:
         - containerPort: 8080
