@@ -1,33 +1,33 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: agere-lystan
+  name: creare-project
 spec:
   ports:
   - port: 8080
     protocol: TCP
   selector:
-    app: agere-lystan
-  type: LoadBalancer
+    app: creare-project
+  type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: agere-lystan
+  name: creare-project
   labels:
-    app: agere-lystan
+    app: creare-project
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: agere-lystan
+      app: creare-project
   template:
     metadata:
       labels:
-        app: agere-lystan
+        app: creare-project
     spec:
       containers:
-      - name: agere-lystan
-        image: atifdockerventure/agere-lystan:latest
+      - name: creare-project
+        image: atifdockerventure/creare-project:latest
         ports:
         - containerPort: 8080

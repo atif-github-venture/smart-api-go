@@ -8,7 +8,7 @@ spec:
     protocol: TCP
   selector:
     app: identifier-reponere
-  type: LoadBalancer
+  type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: Deployment
