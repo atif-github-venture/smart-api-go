@@ -9,7 +9,7 @@ spec:
     targetPort: 8080
   selector:
     app: agere-lystan
-  type: LoadBalancer
+  type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -32,4 +32,4 @@ spec:
         image: atifdockerventure/agere-lystan:latest
         ports:
         - containerPort: 8080
-      dnsPolicy: ClusterFirst
+#      dnsPolicy: ClusterFirst
