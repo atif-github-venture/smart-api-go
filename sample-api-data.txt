@@ -1,0 +1,137 @@
+//Object repo:
+{
+	"identifier": "userName",
+    "property": "id=txtUsername",
+    "description": "User Name",
+    "createdby": "atif ahmed"
+}
+{
+	"identifier": "userPassword",
+    "property": "id=txtPassword",
+    "description": "User Password",
+    "createdby": "atif ahmed"
+}
+{
+	"identifier": "LoginButton",
+    "property": "id=btnLogin",
+    "description": "Login Button",
+    "createdby": "atif ahmed"
+}
+
+{
+	"identifier": "Dashboard Header",
+    "property": "xpath=//*[@id="content"]/div/div[1]/h1",
+    "description": "Dashboard Header",
+    "createdby": "atif ahmed"
+}
+
+//micro test
+{
+   "microtestname":"successfully login to orange hrm application",
+   "steps":[
+      {
+         "identifier":"userName",
+         "action":"enter text",
+         "data":"userName"
+      },
+      {
+         "identifier":"userPassword",
+         "action":"enter text",
+         "data":"userPassword"
+      },
+      {
+         "identifier":"LoginButton",
+         "action":"click",
+         "data":null
+      },
+      {
+         "identifier":"Dashboard Header",
+         "action":"is visible",
+         "data":null
+      }
+   ],
+   "createdby":"atif ahmed"
+}
+
+
+//action list
+{
+	"action": "enter text",
+	"datadriven" : true,
+	"createdby" : "atif ahmed"
+}
+
+{
+	"action": "click",
+	"datadriven" : false,
+	"createdby" : "atif ahmed"
+}
+{
+	"action": "is visible",
+	"datadriven" : false,
+	"createdby" : "atif ahmed"
+}
+
+//macro test
+
+{
+   "macrotestname":"Login test on orange HRM web application",
+   "tags":[
+      "#orangehrm",
+      "#login",
+      "#success",
+      "#web"
+   ],
+   "microtest":[
+      {
+         "microtestname":"successfully login to orange hrm application",
+         "steps":[
+            {
+               "identifier":"userName",
+               "action":"enter text",
+               "data":"userName"
+            },
+            {
+               "identifier":"userPassword",
+               "action":"enter text",
+               "data":"userPassword"
+            },
+            {
+               "identifier":"LoginButton",
+               "action":"click",
+               "data":null
+            },
+            {
+               "identifier":"Dashboard Header",
+               "action":"is visible",
+               "data":null
+            }
+         ]
+      }
+   ],
+   "createdby":"atif ahmed",
+   "status":true
+}
+
+// execution configuration
+
+{
+   "testconfiguration":"default mac chrome configuration",
+   "properties":{
+      "recordVideo":true,
+      "videoUploadOnPass":false,
+      "commandTimeout":"300",
+      "idleTimeOut":"240",
+      "tunnelIdentifier":"tunnelPool",
+      "autoAcceptAlerts":true,
+      "nativeWebScreenshot":false,
+      "rotatable":true,
+      "nativeWebTap":true,
+      "ensureCleanSession":true,
+      "platform":"mac 10.14",
+      "browserName":"chrome",
+      "version":"74.0",
+      "screenResolution":"1280x960"
+   },
+   "createdby":"atif ahmed"
+}
