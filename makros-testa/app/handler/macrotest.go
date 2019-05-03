@@ -18,6 +18,7 @@ func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *htt
 		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
 		return
 	}
+	//ensureIndex(projectName, session, co)
 	model.EnsureIndex(projectName, co.DB.Collection, session)
 	m := make(map[string]string)
 	var objrep []model.ObjectRepo

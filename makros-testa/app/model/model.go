@@ -6,10 +6,21 @@ import (
 
 type ObjectRepo struct {
 	MacroTestName string   `json:"macrotestname"`
-	MicroTests    []string `json:"microtests"`
 	Tags          []string `json:"tags"`
-	CreatedBy     string   `json:"createdby"`
+	MicroTest     []MicroTest
+	CreatedBy     string `json:"createdby"`
 	Status        bool
+}
+
+type MicroTest struct {
+	MicroTestName string `json:"microtestname"`
+	Steps         []Steps
+}
+
+type Steps struct {
+	Identifier string `json:"identifier"`
+	Action     string `json:"action"`
+	Data       string `json:"data"`
 }
 
 func EnsureIndex(dbname string, collectioname string, s *mgo.Session) *mgo.Session {

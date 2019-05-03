@@ -1,0 +1,34 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: my-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /agere-lystan
+            backend:
+              serviceName: agere-lystan
+              servicePort: 8080
+          - path: /creare-project
+            backend:
+              serviceName: creare-project
+              servicePort: 8080
+          - path: /identifier-reponere
+            backend:
+              serviceName: identifier-reponere
+              servicePort: 8080
+          - path: /makros-testa
+            backend:
+              serviceName: makros-testa
+              servicePort: 8080
+          - path: /mikros-testa
+            backend:
+              serviceName: mikros-testa
+              servicePort: 8080
+          - path: /testa-configurare
+            backend:
+              serviceName: testa-configurare
+              servicePort: 8080

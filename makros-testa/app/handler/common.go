@@ -17,6 +17,7 @@ func ResponseWithJSON(w http.ResponseWriter, json []byte, code int) {
 	w.WriteHeader(code)
 	w.Write(json)
 }
+
 func GetProjectName(r *http.Request) string {
 	headers := make(map[string]interface{})
 	for k, v := range r.Header {

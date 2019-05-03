@@ -12,4 +12,4 @@ func main() {
 	app.Run(":8080")
 }
 
-//italian-latin - makros-testa -> macro test
+//french-latin - detail-testa -> detail test

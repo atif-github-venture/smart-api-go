@@ -12,7 +12,7 @@ spec:
     targetPort: 27017
     protocol: TCP
   externalIPs:
-    - 192.168.99.100
+    - 192.168.99.109
   selector:
     app: mongo
     role: master
