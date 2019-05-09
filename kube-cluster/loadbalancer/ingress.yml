@@ -32,3 +32,7 @@ spec:
             backend:
               serviceName: testa-configurare
               servicePort: 8080
+          - path: /data-setup
+            backend:
+              serviceName: data-setup
+              servicePort: 8080

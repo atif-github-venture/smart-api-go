@@ -47,6 +47,7 @@ kubectl delete service/identifier-reponere
 kubectl delete service/makros-testa
 kubectl delete service/mikros-testa
 kubectl delete service/testa-configurare
+kubectl delete service/data-setup
 
 kubectl delete deployment.apps/agere-lystan
 kubectl delete deployment.apps/creare-project
@@ -54,6 +55,7 @@ kubectl delete deployment.apps/identifier-reponere
 kubectl delete deployment.apps/makros-testa
 kubectl delete deployment.apps/mikros-testa
 kubectl delete deployment.apps/testa-configurare
+kubectl delete deployment.apps/data-setup
 
 kubectl apply -f mongo-service.yml
 cd api
@@ -63,6 +65,7 @@ kubectl create -f identifier-reponere-deploy-svc.yml
 kubectl create -f makros-testa-deploy-svc.yml
 kubectl create -f mikros-testa-deploy-svc.yml
 kubectl create -f testa-configurare-deploy-svc.yml
+kubectl create -f data-setup-deploy-svc.yml
 cd ..
 cd loadbalancer
 kubectl apply -f nginx.yml
