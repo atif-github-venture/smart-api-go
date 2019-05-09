@@ -135,3 +135,18 @@
    },
    "createdby":"atif ahmed"
 }
+
+//data-setup
+{
+	"namespace": "default data setup",
+	"key": "userName",
+	"random": false,
+	"value": "Admin"
+}
+
+{
+	"namespace": "default data setup",
+	"key": "userPassword",
+	"random": false,
+	"value": "admin123"
+}

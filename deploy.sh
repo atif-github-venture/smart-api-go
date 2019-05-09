@@ -34,7 +34,7 @@ docker tag mikros-testa atifdockerventure/mikros-testa
 docker push atifdockerventure/mikros-testa:latest
 cd ..
 
-cd mikros-testa
+cd testa-configurare
 docker build -t testa-configurare .
 docker tag testa-configurare atifdockerventure/testa-configurare
 docker push atifdockerventure/testa-configurare:latest
