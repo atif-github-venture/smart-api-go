@@ -40,6 +40,12 @@ docker tag testa-configurare atifdockerventure/testa-configurare
 docker push atifdockerventure/testa-configurare:latest
 cd ..
 
+cd data-setup
+docker build -t data-setup .
+docker tag data-setup atifdockerventure/data-setup
+docker push atifdockerventure/data-setup:latest
+cd ..
+
 cd kube-cluster
 kubectl delete service/agere-lystan
 kubectl delete service/creare-project
@@ -82,3 +88,4 @@ kubectl describe ing
 #run -> minikube addons enable ingress
 #run -> curl -kL http://minikube_ip/service_name
 #source: https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
+#for public ip example -> https://dzone.com/articles/ingress-controllers-for-kubernetes

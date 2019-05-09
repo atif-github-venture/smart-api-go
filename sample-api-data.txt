@@ -73,6 +73,7 @@
 }
 
 //macro test
+//http://192.168.99.109/makros-testa?tags=%23login&&tags=%23web
 
 {
    "macrotestname":"Login test on orange HRM web application",

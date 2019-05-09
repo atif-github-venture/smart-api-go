@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="data setup api - inprogress">
-      <change afterPath="$PROJECT_DIR$/kube-cluster/api/data-setup-deploy-svc.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data-setup/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/data-setup/config/config.go" afterDir="false" />
+    <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kube-cluster/loadbalancer/ingress.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kube-cluster/loadbalancer/ingress.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-api-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample-api-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartapigo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/smartapigo.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,20 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data-setup/config/config.go">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample-api-data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+            <state relative-caret-position="1380">
+              <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kube-cluster/loadbalancer/ingress.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="685">
+              <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -120,7 +118,6 @@
         <option value="$PROJECT_DIR$/makros-testa/Dockerfile" />
         <option value="$PROJECT_DIR$/makros-testa/config/config.go" />
         <option value="$PROJECT_DIR$/makros-testa/app/app.go" />
-        <option value="$PROJECT_DIR$/makros-testa/app/handler/macrotest.go" />
         <option value="$PROJECT_DIR$/testa-configurare/main.go" />
         <option value="$PROJECT_DIR$/testa-configurare/app/handler/microtest.go" />
         <option value="$PROJECT_DIR$/testa-configurare/app/model/model.go" />
@@ -128,16 +125,17 @@
         <option value="$PROJECT_DIR$/testa-configurare/Dockerfile" />
         <option value="$PROJECT_DIR$/testa-configurare/app/app.go" />
         <option value="$PROJECT_DIR$/testa-configurare/config/config.go" />
-        <option value="$PROJECT_DIR$/sample-api-data.txt" />
         <option value="$PROJECT_DIR$/data-setup/main.go" />
         <option value="$PROJECT_DIR$/data-setup/Dockerfile" />
         <option value="$PROJECT_DIR$/data-setup/app/app.go" />
         <option value="$PROJECT_DIR$/data-setup/app/handler/data-setup.go" />
         <option value="$PROJECT_DIR$/data-setup/app/model/model.go" />
         <option value="$PROJECT_DIR$/kube-cluster/api/data-setup-deploy-svc.yml" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
-        <option value="$PROJECT_DIR$/data-setup/config/config.go" />
         <option value="$PROJECT_DIR$/kube-cluster/loadbalancer/ingress.yml" />
+        <option value="$PROJECT_DIR$/data-setup/config/config.go" />
+        <option value="$PROJECT_DIR$/deploy.sh" />
+        <option value="$PROJECT_DIR$/makros-testa/app/handler/macrotest.go" />
+        <option value="$PROJECT_DIR$/sample-api-data.txt" />
       </list>
     </option>
   </component>
@@ -158,7 +156,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,50 +167,33 @@
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="data-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="makros-testa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="data-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="makros-testa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="data-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="makros-testa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="handler" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="data-setup" type="462c0819:PsiDirectoryNode" />
+              <item name="makros-testa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="data-setup" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-cluster" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="kube-cluster" type="462c0819:PsiDirectoryNode" />
-              <item name="loadbalancer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,7 +201,7 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557361687442" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557364231288" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -229,8 +210,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/kube-cluster/api" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/kube-cluster" />
       <recent name="$PROJECT_DIR$/mongo-cluster" />
       <recent name="$PROJECT_DIR$/creare-project" />
@@ -255,7 +236,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Build.go build main.go (2)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -273,6 +254,15 @@
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/testa-configurare/main.go" />
+      <package value="smartapigo" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (2)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="smartapigo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/data-setup/main.go" />
       <package value="smartapigo" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
@@ -323,9 +313,11 @@
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Test.main_test.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go (2)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Test.main_test.go" />
@@ -354,7 +346,8 @@
       <workItem from="1556915347952" duration="493000" />
       <workItem from="1557163588514" duration="3772000" />
       <workItem from="1557354843170" duration="413000" />
-      <workItem from="1557357017761" duration="4609000" />
+      <workItem from="1557357017761" duration="6420000" />
+      <workItem from="1557415872546" duration="2010000" />
     </task>
     <task id="LOCAL-00001" summary="added dockerfiles and docker compose">
       <created>1555453631920</created>
@@ -447,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557361583441</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="data setup api - inprogress">
+      <created>1557361745482</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1557361745482</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -483,12 +483,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200393000" />
+    <option name="totallyTimeSpent" value="204214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="961" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.17460318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.17643468" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.25885227" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -505,7 +505,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289941" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.52781063" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4993895" weight="0.44852072" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50061053" side_tool="true" weight="0.3289941" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -634,7 +634,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kube-cluster/nginx-ingress-rc.yml" />
     <entry file="file://$PROJECT_DIR$/kube-cluster/api/identifier-reponere-deploy-svc.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -726,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makros-testa/app/handler/macrotest.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makros-testa/app/handler/common.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -776,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#13#170#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,9 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#14#99#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,40 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample-api-data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="138" column="2" lean-forward="true" selection-start-line="138" selection-start-column="2" selection-end-line="138" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-setup/app/handler/data-setup.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
-          <folding>
-            <element signature="e#17#197#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-setup/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data-setup/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kube-cluster/api/data-setup-deploy-svc.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -864,20 +816,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
+    <entry file="file://$PROJECT_DIR$/data-setup/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="69" column="15" lean-forward="true" selection-start-line="69" selection-start-column="15" selection-end-line="69" selection-end-column="15" />
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-setup/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#14#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data-setup/app/app.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="225">
           <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="e#13#156#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-setup/config/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
@@ -888,10 +857,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-setup/config/config.go">
+    <entry file="file://$PROJECT_DIR$/data-setup/app/handler/common.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state>
+          <folding>
+            <element signature="e#17#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-setup/app/handler/data-setup.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
+          <folding>
+            <element signature="e#17#183#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -899,6 +880,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makros-testa/app/handler/macrotest.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample-api-data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="32" selection-end-line="92" selection-end-column="32" />
         </state>
       </provider>
     </entry>
