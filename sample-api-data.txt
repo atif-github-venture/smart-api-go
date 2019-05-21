@@ -27,7 +27,7 @@
 
 //micro test
 {
-   "microtestname":"successfully login to orange hrm application",
+   "microtestname":"perform steps for login",
    "steps":[
       {
          "identifier":"userName",
@@ -43,7 +43,14 @@
          "identifier":"LoginButton",
          "action":"click",
          "data":null
-      },
+      }
+   ],
+   "createdby":"atif ahmed"
+}
+
+{
+   "microtestname":"validate landed on dashboard page",
+   "steps":[
       {
          "identifier":"Dashboard Header",
          "action":"is visible",
@@ -53,6 +60,17 @@
    "createdby":"atif ahmed"
 }
 
+{
+    "microtestname" : "validate did not land on dashboard page",
+    "steps" : [
+        {
+            "identifier" : "Dashboard Header",
+            "action" : "is not visible",
+            "data" : ""
+        }
+    ],
+    "createdby" : "atif ahmed"
+}
 
 //action list
 {
@@ -76,42 +94,95 @@
 //http://192.168.99.109/makros-testa?tags=%23login&&tags=%23web
 
 {
-   "macrotestname":"Login test on orange HRM web application",
-   "tags":[
-      "#orangehrm",
-      "#login",
-      "#success",
-      "#web"
-   ],
-   "microtest":[
-      {
-         "microtestname":"successfully login to orange hrm application",
-         "steps":[
-            {
-               "identifier":"userName",
-               "action":"enter text",
-               "data":"userName"
-            },
-            {
-               "identifier":"userPassword",
-               "action":"enter text",
-               "data":"userPassword"
-            },
-            {
-               "identifier":"LoginButton",
-               "action":"click",
-               "data":null
-            },
-            {
-               "identifier":"Dashboard Header",
-               "action":"is visible",
-               "data":null
-            }
-         ]
-      }
-   ],
-   "createdby":"atif ahmed",
-   "status":true
+    "macrotestname" : "Login successfull on orange HRM web application",
+    "tags" : [
+        "#orangehrm",
+        "#login",
+        "#success",
+        "#web"
+    ],
+    "microtest" : [
+        {
+            "microtestname" : "perform steps for login",
+            "steps" : [
+                {
+                    "identifier" : "userName",
+                    "action" : "enter text",
+                    "data" : "userName"
+                },
+                {
+                    "identifier" : "userPassword",
+                    "action" : "enter text",
+                    "data" : "userPassword"
+                },
+                {
+                    "identifier" : "LoginButton",
+                    "action" : "click",
+                    "data" : null
+                }
+            ],
+            "createdby" : "atif ahmed"
+        },
+        {
+            "microtestname" : "validate landed on dashboard page",
+            "steps" : [
+                {
+                    "identifier" : "Dashboard Header",
+                    "action" : "is visible",
+                    "data" : null
+                }
+            ],
+            "createdby" : "atif ahmed"
+        }
+    ],
+    "createdby" : "atif ahmed",
+    "status" : true
+}
+
+{
+    "macrotestname" : "Login failed on orange HRM web application",
+    "tags" : [
+        "#orangehrm",
+        "#login",
+        "#failed",
+        "#web"
+    ],
+    "microtest" : [
+        {
+            "microtestname" : "perform steps for login",
+            "steps" : [
+                {
+                    "identifier" : "userName",
+                    "action" : "enter text",
+                    "data" : "userName"
+                },
+                {
+                    "identifier" : "userPassword",
+                    "action" : "enter text",
+                    "data" : "userPassword"
+                },
+                {
+                    "identifier" : "LoginButton",
+                    "action" : "click",
+                    "data" : null
+                }
+            ],
+            "createdby" : "atif ahmed"
+        },
+        {
+		    "microtestname" : "validate did not land on dashboard page",
+		    "steps" : [
+		        {
+		            "identifier" : "Dashboard Header",
+		            "action" : "is not visible",
+		            "data" : ""
+		        }
+		    ],
+		    "createdby" : "atif ahmed"
+		}
+    ],
+    "createdby" : "atif ahmed",
+    "status" : true
 }
 
 // execution configuration
