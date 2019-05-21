@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sample-api-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample-api-data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample-api-data.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/smartapigo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/smartapigo.iws" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -13,17 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sample-api-data.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -146,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,30 +144,11 @@
               <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
               <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="smartapigo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="smartapigo" type="462c0819:PsiDirectoryNode" />
-              <item name="creare-project" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,7 +156,7 @@
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558450702719" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558450766381" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -332,7 +304,8 @@
       <workItem from="1557357017761" duration="6420000" />
       <workItem from="1557415872546" duration="2010000" />
       <workItem from="1558371158871" duration="2984000" />
-      <workItem from="1558449776990" duration="889000" />
+      <workItem from="1558449776990" duration="1029000" />
+      <workItem from="1558451159953" duration="1002000" />
     </task>
     <task id="LOCAL-00001" summary="added dockerfiles and docker compose">
       <created>1555453631920</created>
@@ -432,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557361745482</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update sample data">
+      <created>1558450754662</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558450754662</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -468,13 +448,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208694000" />
+    <option name="totallyTimeSpent" value="209836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="961" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.18742369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49915683" visible="true" weight="0.1892552" />
       <window_info id="Structure" order="1" sideWeight="0.50084317" side_tool="true" weight="0.25885227" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -568,7 +547,8 @@
     <MESSAGE value="testa-configurare - in progress - other services broken" />
     <MESSAGE value="added file to contain the sample data being pushed to the mongo via go services" />
     <MESSAGE value="data setup api - inprogress" />
-    <option name="LAST_COMMIT_MESSAGE" value="data setup api - inprogress" />
+    <MESSAGE value="update sample data" />
+    <option name="LAST_COMMIT_MESSAGE" value="update sample data" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -870,8 +850,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sample-api-data.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-425">
-          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
+        <state relative-caret-position="1858">
+          <caret line="172" column="44" lean-forward="true" selection-start-line="172" selection-start-column="44" selection-end-line="172" selection-end-column="44" />
         </state>
       </provider>
     </entry>
