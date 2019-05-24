@@ -8,29 +8,25 @@ spec:
   rules:
     - http:
         paths:
-          - path: /agere-lystan
+          - path: /action-list
             backend:
-              serviceName: agere-lystan
+              serviceName: action-list
               servicePort: 8080
-          - path: /creare-project
+          - path: /create-project
             backend:
-              serviceName: creare-project
+              serviceName: create-project
               servicePort: 8080
-          - path: /identifier-reponere
+          - path: /identifier-repository
             backend:
-              serviceName: identifier-reponere
+              serviceName: identifier-repository
               servicePort: 8080
-          - path: /makros-testa
+          - path: /test-repository
             backend:
-              serviceName: makros-testa
+              serviceName: test-repository
               servicePort: 8080
-          - path: /mikros-testa
+          - path: /test-config
             backend:
-              serviceName: mikros-testa
-              servicePort: 8080
-          - path: /testa-configurare
-            backend:
-              serviceName: testa-configurare
+              serviceName: test-config
               servicePort: 8080
           - path: /data-setup
             backend:

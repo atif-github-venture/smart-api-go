@@ -4,40 +4,34 @@
 
 echo y | docker system prune
 
-cd agere-lystan
-docker build -t agere-lystan .
-docker tag agere-lystan atifdockerventure/agere-lystan
-docker push atifdockerventure/agere-lystan:latest
+cd action-list
+docker build -t action-list .
+docker tag action-list atifdockerventure/action-list
+docker push atifdockerventure/action-list:latest
 cd ..
 
-cd creare-project
-docker build -t creare-project .
-docker tag creare-project atifdockerventure/creare-project
-docker push atifdockerventure/creare-project:latest
+cd create-project
+docker build -t create-project .
+docker tag create-project atifdockerventure/create-project
+docker push atifdockerventure/create-project:latest
 cd ..
 
-cd identifier-reponere
-docker build -t identifier-reponere .
-docker tag identifier-reponere atifdockerventure/identifier-reponere
-docker push atifdockerventure/identifier-reponere:latest
+cd identifier-repository
+docker build -t identifier-repository .
+docker tag identifier-repository atifdockerventure/identifier-repository
+docker push atifdockerventure/identifier-repository:latest
 cd ..
 
-cd makros-testa
-docker build -t makros-testa .
-docker tag makros-testa atifdockerventure/makros-testa
-docker push atifdockerventure/makros-testa:latest
+cd test-repository
+docker build -t test-repository .
+docker tag test-repository atifdockerventure/test-repository
+docker push atifdockerventure/test-repository:latest
 cd ..
 
-cd mikros-testa
-docker build -t mikros-testa .
-docker tag mikros-testa atifdockerventure/mikros-testa
-docker push atifdockerventure/mikros-testa:latest
-cd ..
-
-cd testa-configurare
-docker build -t testa-configurare .
-docker tag testa-configurare atifdockerventure/testa-configurare
-docker push atifdockerventure/testa-configurare:latest
+cd test-config
+docker build -t test-config .
+docker tag test-config atifdockerventure/test-config
+docker push atifdockerventure/test-config:latest
 cd ..
 
 cd data-setup
@@ -47,30 +41,27 @@ docker push atifdockerventure/data-setup:latest
 cd ..
 
 cd kube-cluster
-kubectl delete service/agere-lystan
-kubectl delete service/creare-project
-kubectl delete service/identifier-reponere
-kubectl delete service/makros-testa
-kubectl delete service/mikros-testa
-kubectl delete service/testa-configurare
+kubectl delete service/action-list
+kubectl delete service/create-project
+kubectl delete service/identifier-repository
+kubectl delete service/test-repository
+kubectl delete service/test-config
 kubectl delete service/data-setup
 
-kubectl delete deployment.apps/agere-lystan
-kubectl delete deployment.apps/creare-project
-kubectl delete deployment.apps/identifier-reponere
-kubectl delete deployment.apps/makros-testa
-kubectl delete deployment.apps/mikros-testa
-kubectl delete deployment.apps/testa-configurare
+kubectl delete deployment.apps/action-list
+kubectl delete deployment.apps/create-project
+kubectl delete deployment.apps/identifier-repository
+kubectl delete deployment.apps/test-repository
+kubectl delete deployment.apps/test-config
 kubectl delete deployment.apps/data-setup
 
 kubectl apply -f mongo-service.yml
 cd api
-kubectl create -f agere-lystan-deploy-svc.yml
-kubectl create -f creare-project-deploy-svc.yml
-kubectl create -f identifier-reponere-deploy-svc.yml
-kubectl create -f makros-testa-deploy-svc.yml
-kubectl create -f mikros-testa-deploy-svc.yml
-kubectl create -f testa-configurare-deploy-svc.yml
+kubectl create -f action-list-deploy-svc.yml
+kubectl create -f create-project-deploy-svc.yml
+kubectl create -f identifier-repository-deploy-svc.yml
+kubectl create -f test-repository-deploy-svc.yml
+kubectl create -f test-config-deploy-svc.yml
 kubectl create -f data-setup-deploy-svc.yml
 cd ..
 cd loadbalancer

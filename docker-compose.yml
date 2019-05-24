@@ -3,7 +3,7 @@ version: "3"
 services:
   identifier-reponere:
     container_name: identifier-reponere
-    build: ./identifier-reponere
+    build: identifier-repository
     image: smartapigo/identifier-reponere
     links:
     - mongodb
