@@ -1,10 +1,13 @@
 package handler
 
 import (
+	"bytes"
 	"encoding/json"
 	"errors"
+	"fmt"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
+	"io/ioutil"
 	"log"
 	"net/http"
 	"smartapigo/test-repository/app/model"
@@ -18,6 +21,7 @@ func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *htt
 		ErrorWithJSON(w, "The project name has not been passed", http.StatusBadRequest)
 		return
 	}
+	callsomething()
 	//ensureIndex(projectName, session, co)
 	model.EnsureIndex(projectName, co.DB.Collection, session)
 	m := make(map[string]string)
@@ -52,6 +56,21 @@ func GetObjects(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *htt
 	}
 
 	ResponseWithJSON(w, respBody, http.StatusOK)
+}
+func callsomething() {
+	jsonData := map[string]string{}
+	jsonValue, _ := json.Marshal(jsonData)
+	request, _ := http.NewRequest("GET", "http://localhost:8080/identifier-repository", bytes.NewBuffer(jsonValue))
+	request.Header.Set("Content-Type", "application/json")
+	request.Header.Set("project", "orange-hrm")
+	client := &http.Client{}
+	response, err := client.Do(request)
+	if err != nil {
+		fmt.Printf("The HTTP request failed with error %s\n", err)
+	} else {
+		data, _ := ioutil.ReadAll(response.Body)
+		fmt.Println(string(data))
+	}
 }
 
 func AddObj(co *config.Config, s *mgo.Session, w http.ResponseWriter, r *http.Request) {
