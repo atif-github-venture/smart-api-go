@@ -9,7 +9,7 @@ type ObjectRepo struct {
 	Tags      []string `json:"tags"`
 	Steps     []Steps
 	CreatedBy string `json:"createdby"`
-	Status    bool
+	Status    bool   `json:"status"`
 }
 
 type Steps struct {
