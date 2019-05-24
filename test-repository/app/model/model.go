@@ -5,9 +5,11 @@ import (
 )
 
 type ObjectRepo struct {
-	TestName  string `json:"testname"`
+	TestName  string   `json:"testname"`
+	Tags      []string `json:"tags"`
 	Steps     []Steps
 	CreatedBy string `json:"createdby"`
+	Status    bool
 }
 
 type Steps struct {
