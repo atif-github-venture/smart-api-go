@@ -1,35 +1,35 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: agere-lystan
+  name: action-list
 spec:
   ports:
   - port: 8080
     protocol: TCP
     targetPort: 8080
   selector:
-    app: agere-lystan
+    app: action-list
   type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: agere-lystan
+  name: action-list
   labels:
-    app: agere-lystan
+    app: action-list
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: agere-lystan
+      app: action-list
   template:
     metadata:
       labels:
-        app: agere-lystan
+        app: action-list
     spec:
       containers:
-      - name: agere-lystan
-        image: atifdockerventure/agere-lystan:latest
+      - name: action-list
+        image: atifdockerventure/action-list:latest
         ports:
         - containerPort: 8080
 #      dnsPolicy: ClusterFirst
