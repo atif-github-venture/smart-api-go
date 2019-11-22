@@ -15,7 +15,7 @@ type DBConfig struct {
 func GetConfig() *Config {
 	return &Config{
 		DB: &DBConfig{
-			MongoUrl:   "localhost:27017",
+			MongoUrl:   "mongo:27017",
 			Username:   "admin",
 			Password:   "admin",
 			Collection: "test-repository",

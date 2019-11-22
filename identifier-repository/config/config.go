@@ -17,7 +17,7 @@ func GetConfig() *Config {
 	//c.ReadProperty()
 	return &Config{
 		DB: &DBConfig{
-			MongoUrl:   "localhost:27017",
+			MongoUrl:   "mongo:27017",
 			Username:   "admin",
 			Password:   "admin",
 			Collection: "identifier-repository",
