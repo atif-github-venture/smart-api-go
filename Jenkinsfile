@@ -2,42 +2,65 @@ node {
     def app
 
     stage('Clone repository') {
-        /* Let's make sure we have the repository cloned to our workspace */
-
         checkout scm
     }
 
-    stage('Build image') {
-        /* This builds the actual image; synonymous to
-         * docker build on the command line */
-
+    stage('Build image for action-list') {
         app = docker.build("atifdockerventure/action-list", "./action-list")
     }
 
-    stage('Push image') {
-        /* Finally, we'll push the image with two tags:
-         * First, the incremental build number from Jenkins
-         * Second, the 'latest' tag.
-         * Pushing multiple tags is cheap, as all the layers are reused. */
+    stage('Push image for action-list') {
         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
             app.push("latest")
         }
     }
 
-     stage('Build image') {
-            /* This builds the actual image; synonymous to
-             * docker build on the command line */
-
+     stage('Build image for create-project') {
             app = docker.build("atifdockerventure/create-project", "./create-project")
         }
 
-        stage('Push image') {
-            /* Finally, we'll push the image with two tags:
-             * First, the incremental build number from Jenkins
-             * Second, the 'latest' tag.
-             * Pushing multiple tags is cheap, as all the layers are reused. */
-            docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+     stage('Push image for create-project') {
+         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
                 app.push("latest")
-            }
-        }
+         }
+     }
+
+     stage('Build image for identifier-repository') {
+         app = docker.build("atifdockerventure/identifier-repository", "./identifier-repository")
+     }
+
+     stage('Push image for identifier-repository') {
+         docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+             app.push("latest")
+         }
+     }
+
+      stage('Build image for test-repository') {
+             app = docker.build("atifdockerventure/test-repository", "./test-repository")
+         }
+
+      stage('Push image for test-repository') {
+          docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+                 app.push("latest")
+          }
+      }
+
+      stage('Build image for test-config') {
+          app = docker.build("atifdockerventure/test-config", "./test-config")
+      }
+
+      stage('Push image for test-config') {
+          docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+              app.push("latest")
+          }
+      }
+      stage('Build image for data-setup') {
+          app = docker.build("atifdockerventure/data-setup", "./data-setup")
+      }
+
+      stage('Push image for data-setup') {
+          docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
+              app.push("latest")
+          }
+      }
 }
