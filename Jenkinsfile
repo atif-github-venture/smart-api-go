@@ -63,4 +63,7 @@ node {
               app.push("latest")
           }
       }
+      stage('deploy to kubernetes'){
+           sh('deploy_to_kubernetes.sh')
+      }
 }
