@@ -1,7 +1,7 @@
 node {
     def app
 
-    stage('triggers') {
+    triggers {
         pollSCM('') //empty quotes tells it to build on a push
     }
 

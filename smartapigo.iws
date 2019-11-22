@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="02dcab03-bf44-4784-aa1e-930a4938c64e" name="Default Changelist" comment="testing auto trigger">
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smartapigo.iws" beforeDir="false" afterPath="$PROJECT_DIR$/smartapigo.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-repository/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/test-repository/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,19 +99,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/kube-cluster/api" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/kube-cluster" />
-      <recent name="$PROJECT_DIR$/mongo-cluster" />
-      <recent name="$PROJECT_DIR$/creare-project" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/test-repository/app/handler" />
       <recent name="$PROJECT_DIR$/archive" />
       <recent name="$PROJECT_DIR$/kube-cluster/ingress" />
       <recent name="$PROJECT_DIR$/kube-cluster/api" />
       <recent name="$PROJECT_DIR$/identifier-reponere/app/handler" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/kube-cluster/api" />
+      <recent name="$PROJECT_DIR$/kube-cluster" />
+      <recent name="$PROJECT_DIR$/mongo-cluster" />
+      <recent name="$PROJECT_DIR$/creare-project" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -267,7 +268,7 @@
       <workItem from="1573663211796" duration="402000" />
       <workItem from="1574348607189" duration="1726000" />
       <workItem from="1574355740058" duration="1039000" />
-      <workItem from="1574395559255" duration="1928000" />
+      <workItem from="1574395559255" duration="13933000" />
     </task>
     <task id="LOCAL-00001" summary="added dockerfiles and docker compose">
       <created>1555453631920</created>
@@ -423,7 +424,196 @@
       <option name="project" value="LOCAL" />
       <updated>1574398052855</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="jenkins file for actionlist">
+      <created>1574398356290</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574398356290</updated>
+    </task>
+    <task id="LOCAL-00024" summary="jenkins file for actionlist">
+      <created>1574399424020</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1574399424020</updated>
+    </task>
+    <task id="LOCAL-00025" summary="jenkins file for actionlist">
+      <created>1574399672030</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1574399672030</updated>
+    </task>
+    <task id="LOCAL-00026" summary="jenkins file for actionlist">
+      <created>1574399769377</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1574399769377</updated>
+    </task>
+    <task id="LOCAL-00027" summary="jenkins file for actionlist">
+      <created>1574399833260</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1574399833260</updated>
+    </task>
+    <task id="LOCAL-00028" summary="jenkins file for actionlist">
+      <created>1574399977075</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1574399977075</updated>
+    </task>
+    <task id="LOCAL-00029" summary="jenkins file for actionlist">
+      <created>1574401124324</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401124324</updated>
+    </task>
+    <task id="LOCAL-00030" summary="jenkins file for actionlist">
+      <created>1574401204862</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401204862</updated>
+    </task>
+    <task id="LOCAL-00031" summary="jenkins file for actionlist">
+      <created>1574401298131</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401298131</updated>
+    </task>
+    <task id="LOCAL-00032" summary="jenkins file for actionlist">
+      <created>1574401370407</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401370407</updated>
+    </task>
+    <task id="LOCAL-00033" summary="jenkins file for actionlist">
+      <created>1574401679125</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401679125</updated>
+    </task>
+    <task id="LOCAL-00034" summary="jenkins file for actionlist">
+      <created>1574401712767</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401712767</updated>
+    </task>
+    <task id="LOCAL-00035" summary="jenkins file for actionlist">
+      <created>1574401758549</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1574401758549</updated>
+    </task>
+    <task id="LOCAL-00036" summary="jenkins file for actionlist">
+      <created>1574402294126</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1574402294126</updated>
+    </task>
+    <task id="LOCAL-00037" summary="jenkins file for actionlist">
+      <created>1574402671512</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1574402671512</updated>
+    </task>
+    <task id="LOCAL-00038" summary="jenkins file for actionlist">
+      <created>1574402788430</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1574402788430</updated>
+    </task>
+    <task id="LOCAL-00039" summary="jenkins file for actionlist">
+      <created>1574402972042</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1574402972042</updated>
+    </task>
+    <task id="LOCAL-00040" summary="jenkins file for actionlist">
+      <created>1574403306419</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403306419</updated>
+    </task>
+    <task id="LOCAL-00041" summary="jenkins file for actionlist">
+      <created>1574403783080</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403783080</updated>
+    </task>
+    <task id="LOCAL-00042" summary="jenkins file for actionlist">
+      <created>1574403868364</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1574403868364</updated>
+    </task>
+    <task id="LOCAL-00043" summary="jenkins file for actionlist">
+      <created>1574404331953</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1574404331953</updated>
+    </task>
+    <task id="LOCAL-00044" summary="jenkins file for actionlist">
+      <created>1574404391642</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1574404391642</updated>
+    </task>
+    <task id="LOCAL-00045" summary="jenkins file for actionlist">
+      <created>1574442087687</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1574442087687</updated>
+    </task>
+    <task id="LOCAL-00046" summary="jenkins file for all the services">
+      <created>1574442536252</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1574442536252</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fix mongo app config in 2 services from localhost to mongo key">
+      <created>1574453446891</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1574453446891</updated>
+    </task>
+    <task id="LOCAL-00048" summary="jenkinsfile to poll scm">
+      <created>1574453797058</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1574453797058</updated>
+    </task>
+    <task id="LOCAL-00049" summary="testing auto trigger from jenkins">
+      <created>1574453878731</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1574453878731</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -500,7 +690,11 @@
     <MESSAGE value="renamed" />
     <MESSAGE value="saving test - web service is in progress" />
     <MESSAGE value="jenkins file for actionlist" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkins file for actionlist" />
+    <MESSAGE value="jenkins file for all the services" />
+    <MESSAGE value="fix mongo app config in 2 services from localhost to mongo key" />
+    <MESSAGE value="jenkinsfile to poll scm" />
+    <MESSAGE value="testing auto trigger from jenkins" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing auto trigger from jenkins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
