@@ -1,6 +1,10 @@
 node {
     def app
 
+    stage('triggers') {
+        pollSCM('') //empty quotes tells it to build on a push
+    }
+
     stage('Clone repository') {
         checkout scm
     }
