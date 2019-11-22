@@ -64,6 +64,6 @@ node {
           }
       }
       stage('deploy to kubernetes'){
-           sh('deploy_to_kubernetes.sh')
+           sh('./deploy_to_kubernetes.sh')
       }
 }
