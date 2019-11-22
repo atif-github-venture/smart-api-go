@@ -2,7 +2,7 @@ node {
     def app
 
     triggers {
-        pollSCM('') //empty quotes tells it to build on a push
+        pollSCM '' //empty quotes tells it to build on a push
     }
 
     stage('Clone repository') {
