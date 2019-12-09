@@ -80,3 +80,8 @@ kubectl describe ing
 #run -> curl -kL http://minikube_ip/service_name
 #source: https://matthewpalmer.net/kubernetes-app-developer/articles/kubernetes-ingress-guide-nginx-example.html
 #for public ip example -> https://dzone.com/articles/ingress-controllers-for-kubernetes
+
+#kubectl delete deployment.apps/mongo
+#kubectl delete service/mongo
+#kubectl delete pvc mongo-pv-claim
+#kubectl delete pv mongo-pv-volume
