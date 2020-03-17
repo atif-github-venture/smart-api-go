@@ -85,3 +85,11 @@ kubectl describe ing
 #kubectl delete service/mongo
 #kubectl delete pvc mongo-pv-claim
 #kubectl delete pv mongo-pv-volume
+
+
+#from inside pod ping other pod
+#kubectl exec -it action-list-cbcbbd776-mhqd6 -- ping data-setup.default.svc.cluster.local
+#kubectl exec -it action-list-cbcbbd776-mhqd6 -- cat /etc/resolv.conf
+#kubectl exec -it data-setup-698d85d67-6ffsv -- curl http://identifier-repository.default.svc.cluster.local:8080/identifier-repository
+#              or
+#kubectl exec -it data-setup-698d85d67-6ffsv -- curl http://identifier-repository:8080/identifier-repository
